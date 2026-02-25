@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+#content{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header{
+    font-style: oblique;
+    font-size: 1.2rem;
+    background-color: #11212D;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.header .btn-registrar{
+    font-weight: bold;
+    font-style: inherit;
+    font-size: inherit;
+    background-color: #6495ed;
+    color: inherit;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 0.8em;
+    position: relative;
+}
+
+.header .btn-registrar:active{
+    top: 1px;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.main-content .container-estudiante,
+.main-content .container-profesor{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1em;
+    width: 500px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.footer{
+    background-color: #11212D;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8em;
+    font-style: oblique;
+}
+
+dialog{
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
